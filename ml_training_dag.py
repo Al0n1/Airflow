@@ -22,8 +22,6 @@ AIRFLOW_PROJECT_WORKING_DIR = DAG_FILE_DIR
 with DAG(
     dag_id="train_pipe",
     start_date=pendulum.now(),
-    concurrency=4,
-    schedule_interval=timedelta(minutes=5),
     max_active_runs=1,
     catchup=False,
 ) as dag:
