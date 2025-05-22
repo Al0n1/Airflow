@@ -1,0 +1,6 @@
+apache-airflow
+pendulum
+pandas
+scikit-learn
+numpy
+joblib
